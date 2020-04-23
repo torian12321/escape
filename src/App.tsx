@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './assets/styles/App.scss';
+import { Loader } from './components/ui';
 import { useBoolean } from './hooks';
 
-function App() {
+const App = () => {
   const [val, actions] = useBoolean(true);
 
   return (
@@ -15,6 +16,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
           <button onClick={actions.toggle}>Change</button>
         </p>
+        <Loader />
         <a
           className="App-link"
           href="https://reactjs.org"
