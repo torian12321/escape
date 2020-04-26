@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Accordion } from './components';
 import './assets/styles/App.scss';
 import { useBoolean } from './hooks';
 
@@ -15,6 +16,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
           <button onClick={actions.toggle}>Change</button>
         </p>
+        <Accordion />
         <a
           className="App-link"
           href="https://reactjs.org"

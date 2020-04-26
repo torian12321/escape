@@ -1,0 +1,13 @@
+.acc {
+  background: red;
+  height: 200px;
+  width: 100px;
+
+  &__content {
+    display: none;
+  }
+
+  &_isOpen &__content{
+    display: block;
+  }
+}
